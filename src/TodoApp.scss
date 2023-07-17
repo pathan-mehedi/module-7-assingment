@@ -44,8 +44,9 @@ form {
     outline: none;
     width: 100%;
     height: 60px;
-    box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ececec;
     margin-right: 10px;
     color: black;
   }
