@@ -133,6 +133,7 @@ const TaskItem = ({ task, onDeleteTask, onToggleTaskStatus }) => {
   return (
     <li className={`task-item ${task.completed ? 'completed' : ''}`}>
       <span>{task.description}</span>
+      <div className="btn_wrapper">
       <button
         className={`status-btn ${task.completed ? 'green' : 'yellow'}`}
         onClick={handleToggleStatus}
@@ -142,6 +143,7 @@ const TaskItem = ({ task, onDeleteTask, onToggleTaskStatus }) => {
       <button className="del-btn" onClick={handleDelete}>
         Delete
       </button>
+      </div>
     </li>
   );
 };

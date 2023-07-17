@@ -13,6 +13,15 @@
 
   h1 {
     margin-bottom: 20px;
+    font-size: 42px;
+    
+    @media (max-width: 998px) {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 998px) {
+    width: 90vw;
   }
 }
 
@@ -22,6 +31,12 @@ form {
   flex-direction: column;
   gap: 10px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
 
   input {
     padding: 10px;
@@ -60,6 +75,10 @@ form {
   border-radius: 8px;
   border: 1px solid #ececec;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -69,8 +88,17 @@ form {
     border-radius: 8px;
     padding: 5px 15px;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     span {
       flex-grow: 1;
+    }
+
+    .btn_wrapper {
+      display: flex;
+      gap: 5px;
     }
 
     .status-btn {
